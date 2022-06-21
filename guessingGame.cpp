@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+//normal level for number guessing mode
 void normalNumberGuessingGame() {
   bool correct = false;
   int guess;
@@ -26,6 +27,7 @@ void normalNumberGuessingGame() {
   cout << "Congratulations! You have guessed the correct number. ";
 }
 
+//easy level for number guessing mode
 void easyNumberGuessingGame() {
   bool correct = false;
   int guess;
@@ -63,6 +65,7 @@ void easyNumberGuessingGame() {
   cout << "Congratulations! You have guessed the correct number. ";
 }
 
+//hard level for number guessing mode
 void hardNumberGuessingGame() {
   bool correct = false;
   int guess;
@@ -89,6 +92,7 @@ void hardNumberGuessingGame() {
 
 string wordBank[10] = {"apple", "banana", "corn", "carrot", "ear", "fridge", "grass", "blue", "brown", "lemon"};
 
+//easy level for word guessing mode
 void easyWordGuessingGame() {
   int idx = rand()%10;
   string correctWord = wordBank[idx];
@@ -129,7 +133,8 @@ void easyWordGuessingGame() {
   cout << "Congratulations! You have guessed the correct word. ";
 }
 
-void mediumWordGuessingGame() {
+//normal level for word guessing mode
+void normalWordGuessingGame() {
   int idx = rand()%10;
   string correctWord = wordBank[idx];
   bool correct = false;
@@ -160,6 +165,7 @@ void mediumWordGuessingGame() {
   cout << "Congratulations! You have guessed the correct word. ";
 }
 
+//hard level for word guessing mode
 void hardWordGuessingGame() {
   int idx = rand()%10;
   string correctWord = wordBank[idx];
@@ -203,22 +209,24 @@ void hardWordGuessingGame() {
 
 
 int main() {
+  //choosing the mode
   cout << "Choose a game - type 'number' OR 'word': ";
   string game;
   cin >> game;
 
-  cout << "Choose a mode - type 'easy' OR 'normal' OR 'hard': ";
-  string mode;
-  cin >> mode;
+  //choosing the level
+  cout << "Choose a level - type 'easy' OR 'normal' OR 'hard': ";
+  string level;
+  cin >> level;
 
   if(game == "number") {
-    if(mode == "easy") {
+    if(level == "easy") {
       easyNumberGuessingGame();
     }
-    else if(mode == "normal") {
+    else if(level == "normal") {
       normalNumberGuessingGame();
     }
-    else if(mode == "hard") {
+    else if(level == "hard") {
       hardNumberGuessingGame();
     }
     else {
@@ -226,13 +234,13 @@ int main() {
     }
   }
   if(game == "word") {
-    if(mode == "easy") {
+    if(level == "easy") {
       easyWordGuessingGame();
     }
-    else if(mode == "normal") {
-      mediumWordGuessingGame();
+    else if(level == "normal") {
+      normalWordGuessingGame();
     }
-    else if(mode == "hard") {
+    else if(level == "hard") {
       hardWordGuessingGame();
     }
     else {
