@@ -221,6 +221,7 @@ int main() {
   string level;
   cin >> level;
 
+  //different difficulties for number guessing game
   if(game == "number") {
     if(level == "easy") {
       easyNumberGuessingGame();
@@ -235,6 +236,8 @@ int main() {
       cout << "Error! You have entered an invalid input. Please run again.";
     }
   }
+  
+  //different difficulties for word guessing game
   if(game == "word") {
     if(level == "easy") {
       easyWordGuessingGame();
