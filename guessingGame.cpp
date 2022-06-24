@@ -70,6 +70,7 @@ void hardNumberGuessingGame() {
   bool correct = false;
   int guess;
   int num = rand()%10;
+  int guesses = 1;
 
   cout << "Guess a number between 1 and 10! " ;
   cin >> guess;
@@ -77,10 +78,11 @@ void hardNumberGuessingGame() {
     correct = true;
   }
   
-  while(!correct) {
+  while(!correct && guesses < 5) {
     cout << "The number you have guessed is incorrect. Please enter a different number." << endl;
     cout << endl << "-------------------------------------------------------------" << endl;
     cout << "Guess a number between 1 and 10! ";
+    guesses++;
     cin >> guess;
     if(guess == num) {
       correct = true;
