@@ -14,6 +14,7 @@ void normalNumberGuessingGame() {
     correct = true;
   }
   
+  //checks if correct answer guessed each time input is received
   while(!correct) {
     cout << "The number you have guessed is incorrect. Please enter a different number." << endl;
     cout << endl << "-------------------------------------------------------------" << endl;
@@ -40,6 +41,7 @@ void easyNumberGuessingGame() {
     correct = true;
   }
   
+  //checks if correct answer guessed each time input is received
   while(!correct) {
     guesses.push_back(guess);
     cout << "The number you have guessed is incorrect. Please enter a different number." << endl;
@@ -78,6 +80,7 @@ void hardNumberGuessingGame() {
     correct = true;
   }
   
+  //checks if correct answer guessed each time input is received
   while(!correct && guesses < 5) {
     cout << "The number you have guessed is incorrect. Please enter a different number." << endl;
     cout << endl << "-------------------------------------------------------------" << endl;
@@ -115,6 +118,7 @@ void easyWordGuessingGame() {
     correct = true;
   }
 
+  //checks if correct answer guessed each time input is received
   while(!correct) {
     cout << "The word you have guessed is incorrect. Please enter a different number." << endl;
     cout << endl << "-------------------------------------------------------------" << endl;
@@ -154,6 +158,7 @@ void normalWordGuessingGame() {
     correct = true;
   }
 
+  //checks if correct answer guessed each time input is received
   while(!correct) {
     cout << "The word you have guessed is incorrect. Please enter a different number." << endl;
     cout << endl << "-------------------------------------------------------------" << endl;
@@ -188,6 +193,7 @@ void hardWordGuessingGame() {
     correct = true;
   }
 
+  //checks if correct answer guessed each time input is received
   while(!correct && count > 0) {
     cout << "The word you have guessed is incorrect. Please enter a different number." << endl;
     cout << "You have " << count << " guesses left. " << endl;
