@@ -4,7 +4,8 @@ This program is a guessing game in which you can choose whether to play either a
 The user can also choose the difficulty. \
 The available difficulties are **easy, normal, and hard**. 
 
-### A close look at the different difficulties
+
+### A closer look at the different difficulties
 _**Number Game**_ 
 1. *Easy Level* 
 - **Unlimited** guesses
